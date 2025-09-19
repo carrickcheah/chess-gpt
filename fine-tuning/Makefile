@@ -1,10 +1,10 @@
 # Chess Fine-Tuning System Makefile
 
-.PHONY: help install setup clean format lint test train evaluate deploy download-magnus-games
+.PHONY: help install setup clean format lint test train run evaluate deploy download-magnus-games
 
 # Variables
 PYTHON := uv run python
-MODAL := uv run python -m modal
+MODAL := MODAL_PROFILE=carrick113 uv run python -m modal
 PROJECT_NAME := chess-gpt
 BASE_MODEL := unsloth/LFM2-350M
 EXPERIMENT_NAME := $(shell date +%Y%m%d-%H%M%S)-chess-gpt
@@ -74,6 +74,8 @@ fine-tune: ## Launch fine-tuning on Modal
 	@echo "Training launched!"
 
 train: fine-tune ## Alias for fine-tune
+
+run: train ## Quick alias for running Modal training (what you were looking for!)
 
 evaluate: ## Evaluate model
 	@echo "Evaluating model..."
