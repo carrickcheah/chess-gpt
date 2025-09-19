@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+dist/
+build/
+*.lock
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/chess.db
+
+# Models (large files)
+models/*.bin
+models/*.safetensors
+models/*.onnx
+models/cache/
+
+# Training
+training/data/raw/
+training/data/processed/
+wandb/
+runs/
+checkpoints/
+
+# Frontend
+frontend/dist/
+frontend/node_modules/
+frontend/.parcel-cache/
+*.js.map
+*.css.map
+
+# Android
+android/app/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+
+# Misc
+*.bak
+.temp/
+.cache/
+tmp/
