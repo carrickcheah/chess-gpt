@@ -37,7 +37,7 @@ class TrainingJobConfig(BaseSettings):
 
     # Dataset configuration
     dataset_name: str = Field(
-        default="MagnusInstruct/chess-positions",
+        default="carrick113/chess-positions",
         description="HuggingFace dataset name"
     )
     dataset_samples: Optional[int] = Field(

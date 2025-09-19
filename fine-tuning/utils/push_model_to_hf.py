@@ -245,7 +245,7 @@ def push_model_to_hf(
     repo_name: str,
     private: bool = False,
     create_model_card_flag: bool = True,
-    dataset_name: str = "MagnusInstruct/chess-positions",
+    dataset_name: str = "carrick113/chess-positions",
 ) -> None:
     """
     Push model to HuggingFace Hub.
@@ -345,7 +345,7 @@ def main(
     repo_name: str,
     private: bool = False,
     create_model_card: bool = True,
-    dataset_name: str = "MagnusInstruct/chess-positions",
+    dataset_name: str = "carrick113/chess-positions",
 ) -> None:
     """
     Main entry point for pushing model to HuggingFace.

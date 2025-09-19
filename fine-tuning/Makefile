@@ -61,7 +61,7 @@ download-magnus-games: ## Download Magnus Carlsen games
 instruction-dataset: ## Generate instruction dataset
 	@echo "Generating instruction dataset..."
 	$(PYTHON) utils/generate_instruction_dataset.py \
-		--hugging_face_dataset_name MagnusInstruct/chess-positions
+		--hugging_face_dataset_name carrick113/chess-positions
 	@echo "Dataset generated!"
 
 # Training commands (fixed module paths)
