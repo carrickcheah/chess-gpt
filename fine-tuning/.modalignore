@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.git/
+Makefile
+outputs/
+*.pyc
+.pytest_cache/
+.coverage
+*.log
+uv.lock

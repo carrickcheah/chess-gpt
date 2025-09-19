@@ -1,5 +1,5 @@
 [project]
-name = "chess-gpt-oss"
+name = "chess-gpt"
 version = "0.1.0"
 description = "Chess game with GPT-OSS AI for Android using Python backend and HTML frontend"
 readme = "README.md"
@@ -57,8 +57,9 @@ typeCheckingMode = "standard"
 reportMissingImports = "warning"
 reportMissingTypeStubs = false
 
-# Package discovery handled automatically
-# No explicit package configuration needed for development
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["game*", "media*", "fine-tuning*"]
 
 [build-system]
 requires = ["setuptools>=61.0"]

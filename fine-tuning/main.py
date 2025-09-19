@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from typing import Any, Optional
 
+import modal
 import wandb
 from dotenv import load_dotenv
 

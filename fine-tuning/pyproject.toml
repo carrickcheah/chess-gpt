@@ -1,5 +1,5 @@
 [project]
-name = "chess-gpt-oss"
+name = "chess-gpt"
 version = "0.1.0"
 description = "Production-grade fine-tuning system for GPT-OSS 20B chess model"
 readme = "README.md"
@@ -19,8 +19,6 @@ dependencies = [
     "datasets>=2.18.0",
     "pandas>=2.2.0",
     "numpy>=1.24.0",
-    # Infrastructure and deployment
-    "modal>=0.62.0",
     "huggingface-hub>=0.22.0",
     # Configuration and utilities
     "pydantic>=2.6.0",
@@ -37,6 +35,7 @@ dependencies = [
     "onnxruntime>=1.17.0",
     "fastapi>=0.116.2",
     "uvicorn>=0.35.0",
+    "modal>=1.1.4",
 ]
 
 [project.optional-dependencies]

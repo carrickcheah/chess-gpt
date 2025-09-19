@@ -76,6 +76,7 @@ def get_docker_image(hf_token: Optional[str] = None) -> modal.Image:
                 **({"HF_TOKEN": hf_token} if hf_token else {}),
             }
         )
+        .add_local_dir(".", remote_path="/root")
     )
 
 
@@ -106,6 +107,7 @@ def get_docker_image_for_evaluation() -> modal.Image:
             "python-chess==1.999",
         )
         .env({"HF_HOME": "/model_cache"})
+        .add_local_dir(".", remote_path="/root")
     )
 
     return docker_image

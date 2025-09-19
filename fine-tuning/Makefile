@@ -4,8 +4,8 @@
 
 # Variables
 PYTHON := uv run python
-MODAL := uv run modal
-PROJECT_NAME := chess-gpt-oss
+MODAL := uv run python -m modal
+PROJECT_NAME := chess-gpt
 BASE_MODEL := unsloth/LFM2-350M
 EXPERIMENT_NAME := $(shell date +%Y%m%d-%H%M%S)-chess-gpt
 CHECKPOINT := LFM2-350M-r16-20250902-232247/checkpoint-5000
